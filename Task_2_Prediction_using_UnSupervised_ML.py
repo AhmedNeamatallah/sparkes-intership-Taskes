@@ -48,13 +48,13 @@ plt.scatter(x[y_kmeans == 1, 0], x[y_kmeans == 1, 1],
             s = 100, c = 'blue', label = 'Iris-versicolour')
 plt.scatter(x[y_kmeans == 2, 0], x[y_kmeans == 2, 1],
             s = 100, c = 'green', label = 'Iris-virginica')
-
+plt.show()
 # Plotting the centroids of the clusters
 
 plt.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:,1],
             s = 100, c = 'yellow', label = 'Centroids')
 plt.legend()
-
+plt.show()
 # Visualising the clusters
 
 plt.scatter(x[y_kmeans == 0, 0], x[y_kmeans == 0, 1],
@@ -69,3 +69,4 @@ plt.scatter(x[y_kmeans == 2, 0], x[y_kmeans == 2, 1],
 plt.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:,1],
             s = 100, c = 'yellow', label = 'Centroids')
 plt.legend()
+plt.show()
